@@ -1,0 +1,154 @@
+@import 'config';
+@import 'utilities';
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	// font-family: 'Ubuntu', sans-serif;
+	font-family: 'Overpass', sans-serif;
+	background-color: $light-white;
+	overflow-x: hidden;
+}
+// Header
+#main-header {
+	height: 80vh;
+	border-radius: 0 0 0 6rem;
+	#main-nav {
+		margin: 3rem 0;
+		align-items: center;
+		justify-content: space-between;
+		vertical-align: middle;
+		// menu and dropdowns
+		.list-menu {
+			position: relative;
+		}
+	}
+	.list-menu:hover .dropdown-content {
+		display: block;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		top: 5px;
+		left: 0;
+		width: 100px;
+		background: $light-white;
+		border-radius: 5px;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		z-index: 1;
+		transition: all 0.4s;
+		a {
+			display: block;
+			margin: 0.5rem 0;
+			color: $very-dark-black-blue;
+			font-weight: normal;
+			transition: all 0.2s;
+			font-size: 1rem;
+			&:hover {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.menu {
+		justify-content: space-between;
+		align-items: center;
+		img {
+			margin: 0 0.1rem;
+			flex: 1;
+		}
+		&-right {
+			display: flex;
+			flex: 8;
+			justify-content: space-between;
+			.auth {
+				justify-content: end;
+				align-items: center;
+				a {
+					margin: 0 1rem;
+				}
+			}
+		}
+	}
+
+	.hamburger {
+		cursor: pointer;
+		display: none;
+		align-items: center;
+		align-self: center;
+	}
+}
+.main-content {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	p {
+		font: 1rem;
+		margin-top: 0.5rem;
+		margin-bottom: 1rem;
+		opacity: 0.9;
+	}
+	button {
+		padding: 0.8rem 1.5rem;
+		font-size: 1rem;
+	}
+}
+
+//feature primary
+.features {
+	position: relative;
+	margin-top: 4rem;
+}
+.feature {
+	&-primary {
+		align-content: center;
+		justify-content: center;
+		vertical-align: middle;
+		align-items: center;
+		margin-top: -10rem;
+	}
+	&-secondary {
+		align-content: center;
+		justify-content: center;
+		vertical-align: middle;
+		align-items: center;
+		margin: 2rem 0;
+		height: 70vh;
+		border-radius: 0 6rem 0 6rem;
+	}
+}
+.content {
+	margin: 1rem 2.5rem;
+	flex: 1;
+	p {
+		padding-right: 2.5rem;
+		letter-spacing: 0.5px;
+		line-height: 1.5;
+	}
+}
+
+.main-footer {
+	border-radius: 0 6rem 0 0;
+	.align-center {
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+	ul:last-child {
+		padding-right: 5rem;
+	}
+
+	li:not(:first-child) {
+		margin: 1rem 0;
+		a {
+			opacity: 0.7;
+			font-weight: lighter;
+			letter-spacing: 0.8px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+@import 'media';
