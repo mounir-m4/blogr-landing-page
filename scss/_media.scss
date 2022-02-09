@@ -67,6 +67,12 @@
 				z-index: 10;
 				flex-direction: column;
 				margin: 1rem 0;
+				svg {
+						stroke: #FF7B86;
+						background-color: #000;
+						height: 40px;
+						width: 40px;
+					}
 				a {
 					color: $very-dark-black-blue;
 					margin: 0.5rem;
@@ -318,6 +324,6 @@
 }
 @media (max-width: 800px) {
 	.menu-right {
-		display: flex !important;
+		display: flex;
 	}
 }
