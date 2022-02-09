@@ -14,8 +14,8 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Screenshots](#screenshots)
     - [Links](#links)
+    - [Screenshots](#screenshots)
     - [Built with](#built-with)
     - [Continued development](#continued-development)
   - [Author](#author)
@@ -28,6 +28,9 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
+
+### Links
+- Page preview : https://blogr-landing-main.netlify.app/
 ### Screenshots
 
 ![Desktop: ](./dist/images/screenshots/Blogr_desktop.png)
@@ -35,9 +38,6 @@ Users should be able to:
 <br/>
 ![mobile: ](./dist/images/screenshots/Blogr_mobile.png)
 
-
-### Links
-- Page preview : https://blogr-landing-main.netlify.app/
 
 
 ### Built with
